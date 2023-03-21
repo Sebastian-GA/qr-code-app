@@ -63,7 +63,8 @@ body {
     background: #58a6ff;
     font-weight: 700;
 }
-.input #button:hover {
+.input #button:hover,
+.input #button:focus {
     background: #3c8aff;
     /* insert transition */
     transition: all 0.2s ease;
@@ -81,5 +82,6 @@ body {
 }
 .qr-code--show img {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
+    aspect-ratio: 1/1;  /* To ensure it is a square when loading img */
 }
